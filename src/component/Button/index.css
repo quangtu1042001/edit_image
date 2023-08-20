@@ -1,0 +1,21 @@
+.design {
+  border: none;
+  margin: 20px 20px 20px 0px;
+  background: rgb(245, 249, 255);
+  background: linear-gradient(
+    79deg,
+    rgba(245, 249, 255, 1) 79%,
+    rgba(227, 238, 255, 1) 100%
+  );
+  width: 240px;
+  text-transform:uppercase;
+  border-radius:6px;
+  cursor:pointer;
+  padding:27px 20px 27px 20px;
+  font-weight:bold;
+  font-family: "montserrat",sans-serif;
+}
+.design:hover{
+    background-position: right;
+    background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+}

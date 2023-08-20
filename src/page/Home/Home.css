@@ -1,0 +1,80 @@
+.bg-header {
+  height: 80vh;
+  width: 100%;
+  background-image: url(" https://imgv3.fotor.com/images/background/background-picture.jpeg");
+  background-size: 100% cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.header-tiitle {
+  display: flex;
+  justify-content: space-between;
+}
+.left-header-title {
+  padding: 100px 0px 0px 200px;
+}
+.left-header-title h1{
+  font-size: 3.125vw;
+    font-weight: 700;
+    line-height: 3.75vw;
+}
+.left-header-title h4{
+  line-height: 1.6666666667vw;
+  font-size: 1rem;
+  letter-spacing: .3px;
+}
+.right-header-title {
+  height: 450px;
+  width: 600px;
+  background-image: url("https://imgv3.fotor.com/images/videoImage/600w/Fotor-free-online-photo-editor.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin:70px 170px 0px 0px
+}
+.button-edit {
+  padding: 14px 50px;
+  font-size: 20px;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: 40px;
+  background: #F2DCA2;
+  border-radius: 30px;
+}
+
+button.button-edit {
+  --c: #229091; /* the color */
+
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background:
+    var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%)/2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+}
+button.button-edit:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+}
+button.button-edit:active {
+  box-shadow: 0 0 9e9px inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
+.footer-title{
+  
+  padding: 0px 0px 0px 200px;
+}
+.m-button{
+  display:flex;
+}
+.grid_card{
+  display:flex;
+  margin-left:80px;
+  
+}
