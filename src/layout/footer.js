@@ -19,15 +19,15 @@ const Footer = () => {
   
             <ul className="nav__ul">
               <li>
-                <a href="#">Online</a>
+                <a href="1">Online</a>
               </li>
   
               <li>
-                <a href="#">Print</a>
+                <a href="2">Print</a>
               </li>
   
               <li>
-                <a href="#">Alternative Ads</a>
+                <a href="3">Alternative Ads</a>
               </li>
             </ul>
           </li>
@@ -38,15 +38,15 @@ const Footer = () => {
   
             <ul className="nav__ul">
               <li>
-                <a href="#">Online</a>
+                <a href="4">Online</a>
               </li>
   
               <li>
-                <a href="#">Print</a>
+                <a href="5">Print</a>
               </li>
   
               <li>
-                <a href="#">Alternative Ads</a>
+                <a href="6">Alternative Ads</a>
               </li>
             </ul>
           </li>{/* dashda */}
@@ -55,15 +55,15 @@ const Footer = () => {
   
             <ul className="nav__ul">
               <li>
-                <a href="#">Online</a>
+                <a href="7">Online</a>
               </li>
   
               <li>
-                <a href="#">Print</a>
+                <a href="8">Print</a>
               </li>
   
               <li>
-                <a href="#">Alternative Ads</a>
+                <a href="9">Alternative Ads</a>
               </li>
             </ul>
           </li>
@@ -75,7 +75,7 @@ const Footer = () => {
   
             <ul className="nav__ul">
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="10">Privacy Policy</a>
               </li>
   
               {/* ... Các mục liên quan đến pháp lý khác ... */}
