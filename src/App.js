@@ -8,7 +8,7 @@ import About from "./page/About";
 import Pricing from "./page/Pricing";
 import Home from "./page/Home";
 import Footer from "./layout/footer";
-import Cutting from "./page/Cutting";
+import Editor from "./page/Editor";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
-          <Route path="/cutting" element={<Cutting />} />
+          <Route path="/cutting" element={<Editor />} />
         </Routes>
       </div>
       <Footer/>
