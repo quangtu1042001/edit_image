@@ -39,21 +39,9 @@
                         display: grid;
                         gap: 5px;
 
-                        .button_sepia:active {
-                            background-color: rgb(84, 93, 216);
-                            color: #fff;
-                        }
-
-                        .button_sepia {
-                            padding: 8px;
-                            background-repeat: 3px;
-                            border: 1px solid #dad7d7;
-                            cursor: pointer;
-                            color: #404040;
-                            text-transform: capitalize;
-                        }
+                        
                     }
-
+                     
                     .filter_slider {
                         margin: 15px 0;
 
@@ -64,15 +52,15 @@
 
                         }
 
-                        .custom-range {
-                            width: 100%;
-                        }
-
+                        
                         .filter_slider label {
                             color: #404040;
                             font-size: 15px;
                             text-transform: capitalize;
                         }
+                    }
+                    .filter_slider input {
+                        width: 100%;
                     }
 
                     .filter_slider span {
@@ -111,7 +99,7 @@
 .image-section{
     width: 82%;
     height:90%;
-    background-color: red;
+    background-color: rgb(49, 43, 43);
 }
 .image{
     width: 100%;
@@ -123,6 +111,9 @@
 .image img{
     object-fit: scale-down;
     transform: all .5s;
+    width: 100%;
+    height: 100%;
+    
 }
 .image svg{
     font-size: 40px;
@@ -145,4 +136,17 @@
     margin: 20px;
     display: flex;
     justify-content: flex-end;
+}
+.filter_key button.active {
+    background-color: rgb(84, 93, 216);
+    color: #fff;
+}
+
+.filter_key button {
+    padding: 8px;
+    background-repeat: 3px;
+    border: 1px solid #dad7d7;
+    cursor: pointer;
+    color: #404040;
+    text-transform: capitalize;
 }
