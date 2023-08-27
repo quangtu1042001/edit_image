@@ -68,6 +68,33 @@ export default function Editor() {
             [e.target.name]: e.target.value
         })
     }
+
+    const leftRotate = () => {
+        setState({
+            ...state,
+            rotate: state.rotate - 90
+        })
+    }
+
+
+    const rightRotate = () => {
+        setState({
+            ...state,
+            rotate: state.rotate + 90
+        })
+    }
+
+    const varticalFlip = () => {
+        setState({
+            ...state,
+            vartical: state.vartical === 1 ? -1 : 1
+        })}
+
+    const horizentalFlip = () => {
+        setState({
+            ...state,
+            horizental: state.horizental === 1 ? -1 : 1
+        })}
     console.log(state)
     return (
         <div className='image_editor'>
@@ -81,9 +108,9 @@ export default function Editor() {
                             <div className="filter_section">
                                 <span style={{ fontSize: '15px', color: '#404040', display: 'block' }}>Filters</span>
                                 <div className="filter_key">
-                                {
+                                    {
                                         filterElement.map((v, i) => <button className={property.name === v.name ? 'active' : ''} onClick={() => setProperty(v)} key={i} >{v.name}</button>)
-                                }
+                                    }
                                 </div>
                             </div>
                             <div className='filter_slider'>
@@ -96,10 +123,10 @@ export default function Editor() {
                             <div className='rotate'>
                                 <label htmlFor="">Rotate & Filp</label>
                                 <div className="icon">
-                                    <div><GrRotateLeft /></div>
-                                    <div ><GrRotateRight /></div>
-                                    <div ><CgMergeVertical /></div>
-                                    <div ><CgMergeHorizontal /></div>
+                                    <div onClick={leftRotate}><GrRotateLeft /></div>
+                                    <div onClick={rightRotate}><GrRotateRight /></div>
+                                    <div onClick={varticalFlip}><CgMergeVertical /></div>
+                                    <div onClick={horizentalFlip }><CgMergeHorizontal /></div>
                                 </div>
 
                             </div>
@@ -119,7 +146,10 @@ export default function Editor() {
             </div>
             <div className='image-section'>
                 <div className='image'>
-                    {state.image ? <img style={{ filter: `brightness(${state.brightness}%) brightness(${state.brightness}%) sepia(${state.sepia}%) saturate(${state.saturate}%) contrast(${state.contrast}%) grayscale(${state.grayscale}%) hue-rotate(${state.hueRotate}deg)`, transform: `rotate(${state.rotate}deg) scale(${state.vartical},${state.horizental})` }} src={state.image} alt="" /> :
+                    {state.image ? <img style={{
+                        filter: `brightness(${state.brightness}%) brightness(${state.brightness}%) sepia(${state.sepia}%) saturate(${state.saturate}%) contrast(${state.contrast}%) grayscale(${state.grayscale}%) hue-rotate(${state.hueRotate}deg)`,
+                        transform: `rotate(${state.rotate}deg) scale(${state.vartical},${state.horizental})`
+                    }} src={state.image} alt="" /> :
                         <label htmlFor='choose'>
                             <IoIosImage />
                             <span className='span_image'>
